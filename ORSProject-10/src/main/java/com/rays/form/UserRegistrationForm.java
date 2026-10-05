@@ -1,0 +1,91 @@
+package com.rays.form;
+
+import java.util.Date;
+
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+
+public class UserRegistrationForm {
+
+	@NotEmpty(message = "First Name is Required")
+	private String firstName;
+
+	@NotEmpty(message = "Last Name is Required")
+	private String lastName;
+
+	@Email
+	@NotEmpty(message = "Login Id is Required")
+	private String loginId;
+
+	@NotEmpty(message = "Password is Required")
+	private String password;
+
+	@NotNull(message = "Date of Birth is Required")
+	private Date dob;
+
+	@NotEmpty(message = "Gender is Required")
+	private String gender;
+
+	@NotEmpty(message = "Mobile Number is Required")
+	@Pattern(regexp = "(^$|[0-9]{10})")
+	private String phone;
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getLoginId() {
+		return loginId;
+	}
+
+	public void setLoginId(String loginId) {
+		this.loginId = loginId;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public Date getDob() {
+		return dob;
+	}
+
+	public void setDob(Date dob) {
+		this.dob = dob;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+}
