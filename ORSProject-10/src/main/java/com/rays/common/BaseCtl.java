@@ -62,7 +62,7 @@ public class BaseCtl<F extends BaseForm, T extends BaseDTO, S extends BaseServic
 	 */
 	@ModelAttribute
 	public void setUserContext(HttpSession session) {
-		userContext = UserContextHolder.getContext();
+
 		if (userContext == null) {
 			UserDTO dto = new UserDTO();
 			dto.setLoginId("root@aastik.com");
