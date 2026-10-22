@@ -66,5 +66,4 @@ public class VehicleForm extends BaseForm {
 		
 		return dto;
 	}
-
 }

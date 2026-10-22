@@ -78,5 +78,4 @@ public class VehicleDTO extends BaseDTO {
 	public String getTableName() {
 		return "Vehicle";
 	}
-
 }

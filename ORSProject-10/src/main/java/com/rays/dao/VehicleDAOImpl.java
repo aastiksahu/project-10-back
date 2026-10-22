@@ -47,5 +47,4 @@ public class VehicleDAOImpl extends BaseDAOImpl<VehicleDTO> implements VehicleDA
 		
 		return whereCondition;
 	}
-
 }

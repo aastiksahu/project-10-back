@@ -10,5 +10,4 @@ import com.rays.dto.VehicleDTO;
 @Service
 @Transactional
 public class VehicleServiceImpl extends BaseServiceImpl<VehicleDTO, VehicleDAOInt> implements VehicleServiceInt{
-
 }

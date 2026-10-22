@@ -11,5 +11,4 @@ import com.rays.service.VehicleServiceInt;
 @RestController
 @RequestMapping(value = "Vehicle")
 public class VehicleCtl extends BaseCtl<VehicleForm, VehicleDTO, VehicleServiceInt>{
-
 }
