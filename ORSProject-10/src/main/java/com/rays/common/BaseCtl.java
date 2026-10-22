@@ -61,7 +61,7 @@ public class BaseCtl<F extends BaseForm, T extends BaseDTO, S extends BaseServic
 	 * @param session HTTP session
 	 */
 	@ModelAttribute
-	public void setUserContext(HttpSession session) {
+	public void setUserContext() {
 
 		if (userContext == null) {
 			UserDTO dto = new UserDTO();
